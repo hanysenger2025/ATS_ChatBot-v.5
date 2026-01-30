@@ -1,0 +1,5 @@
+{
+  "name": "ATS-ChatBot v.0.5",
+  "description": "An intelligent assistant for Egyptian Applied Technology Schools, providing detailed information about specialties, locations, requirements, and application processes.",
+  "requestFramePermissions": []
+}
