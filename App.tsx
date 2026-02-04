@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { Send, Bot, User, Loader2, RefreshCcw, School, MapPin, Search, X, ChevronLeft, ExternalLink, Filter, Layers, Map, CheckCircle2, Building2, Heart, Navigation, MapPinned } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { chatService } from './services/geminiService';
 import { Message, SchoolData } from './types';
 import { INITIAL_MESSAGE, CSV_DATA } from './constants';
@@ -366,6 +367,7 @@ const App: React.FC = () => {
           </div>
         </div>
       )}
+      <SpeedInsights />
     </div>
   );
 };
