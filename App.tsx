@@ -177,7 +177,7 @@ const App: React.FC = () => {
       if (part.match(urlRegex)) {
         return (
           <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 px-5 py-3 rounded-2xl mt-4 border border-indigo-200 hover:bg-indigo-100 transition-all font-bold shadow-sm group/btn">
-            <MapPin className="w-5 h-5 text-indigo-600 group-hover/btn:scale-110 transition-transform" />
+            <MapPinned className="w-5 h-5 text-indigo-600 group-hover/btn:scale-110 transition-transform" />
             <span>عرض موقع المدرسة</span>
             <ExternalLink className="w-3 h-3 opacity-50" />
           </a>
@@ -271,7 +271,7 @@ const App: React.FC = () => {
             </div>
             <button 
               onClick={handleFullReset} 
-              className="px-6 py-3 bg-red-600 text-white hover:bg-red-700 rounded-2xl text-sm font-bold transition-all shadow-lg flex items-center gap-3 ring-4 ring-red-100"
+              className="px-6 py-3 bg-red-600 text-white hover:bg-red-700 rounded-2xl text-sm font-bold transition-all shadow-xl flex items-center gap-3 ring-4 ring-red-100 active:scale-95 transform-gpu"
             >
               <RefreshCcw className="w-5 h-5" />
               مسح الفلاتر والعودة للبداية
